@@ -15,4 +15,9 @@ Linux arm64
 aarch64-linux-gnu-g++ -std=c++20 -fPIC -shared xxh3.cpp -o libcsp_xxhash3_arm64.so
 ```
 
+MacOS
+```
+g++ -std=c++20 -fPIC -shared xxh3.cpp -o libcsp_xxhash3.dylib
+```
+
 Prebuilt binaries are included in the `AssettoServer/Redist` folder.

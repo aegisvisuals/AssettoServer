@@ -1,0 +1,13 @@
+<Project>
+    <!-- 
+        This exists to override the RuntimeIdentifier for local development.
+        
+        Directory.Build.local.props: 
+        <Project>
+            <PropertyGroup>
+                <RuntimeIdentifier>osx-arm64</RuntimeIdentifier>
+            </PropertyGroup>
+        </Project>
+    -->
+    <Import Project="Directory.Build.local.props" Condition="Exists('Directory.Build.local.props')"/>
+</Project>
